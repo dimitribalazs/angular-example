@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { UsernameComponent } from './components/username/username.component';
+import { CurrentpageComponent } from './components/currentpage/currentpage.component';
 import { DataService } from './services/data.service';
 
 
@@ -8,8 +8,8 @@ import { DataService } from './services/data.service';
     imports: [
       CommonModule,
     ],
-  exports: [UsernameComponent],
-  declarations: [UsernameComponent],
+  exports: [CurrentpageComponent],
+  declarations: [CurrentpageComponent],
   providers: [DataService]
   })
   export class SharedModule { }

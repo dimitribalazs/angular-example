@@ -2,11 +2,11 @@ import { Component, OnInit, Input } from '@angular/core';
 import { DataService } from '../../services/data.service';
 
 @Component({
-  selector: 'username',
-  templateUrl: './username.component.html',
-  styleUrls: ['./username.component.css']
+  selector: 'currentpage',
+  templateUrl: './currentpage.component.html',
+  styleUrls: ['./currentpage.component.css']
 })
-export class UsernameComponent implements OnInit {
+export class CurrentpageComponent implements OnInit {
 
   private _currentPage: string;
 

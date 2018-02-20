@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { secondRouter } from './secound.router';
 import { SharedModule } from '../shared/shared.module';
-import { UsernameComponent } from '../shared/components/username/username.component';
+import { CurrentpageComponent } from '../shared/components/currentpage/currentpage.component';
 
 @NgModule({
   imports: [
@@ -11,6 +11,6 @@ import { UsernameComponent } from '../shared/components/username/username.compon
     SharedModule,
     secondRouter,
   ],
-    declarations: [HomeComponent]
+  declarations: [HomeComponent]
 })
 export class SecondModule { }
