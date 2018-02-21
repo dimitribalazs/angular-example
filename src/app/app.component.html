@@ -2,13 +2,17 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  
+  <div>
+    <label for="sharedText">Shared Text</label>
+    <input #sharedText (change)="changeText($event.target.value)"/>
+  </div>
   <nav>
-      <a routerLink="/first/home">First Home</a>
-      <a routerLink="/first/detail">First Detail</a>
-      <a routerLink="/second/home">Second Home</a>
-      <a routerLink="/second/detail">Second Detail</a>
-      
+    <ul>
+      <li><a routerLink="/first/home">First Home</a></li>
+      <li><a routerLink="/first/detail">First Detail</a></li>
+      <li><a routerLink="/second/home">Second Home</a></li>
+      <li><a routerLink="/second/detail">Second Detail</a></li>
+    </ul>
   </nav>
 </div>
 <div style="background-color: yellow">

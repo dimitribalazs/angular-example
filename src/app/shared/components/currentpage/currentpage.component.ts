@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, SkipSelf } from '@angular/core';
 import { DataService } from '../../services/data.service';
 
 @Component({
@@ -32,8 +32,9 @@ export class CurrentpageComponent implements OnInit {
     return this._additionalText;
   }
 
-
-  constructor(private dataService: DataService) { }
+  constructor(@SkipSelf() private dataService: DataService) { 
+    console.log("%cnew instance currentpage", 'background: #222; color: #bada55');
+  }
 
   ngOnInit() {
   }

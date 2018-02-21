@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from './shared/services/data.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  constructor(public dataservice: DataService) { }
+
+  public changeText(text: string): void {
+    this.dataservice.changeSharedText(text);
+  }
 }

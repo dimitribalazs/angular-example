@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, SkipSelf } from '@angular/core';
+import { DataService } from '../../shared/services/data.service';
 
 @Component({
   selector: 'first-detail',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DetailComponent implements OnInit {
 
-  constructor() { }
+  constructor(@SkipSelf() private dataservice: DataService) {
+    console.log("%cnew instance firstdetail " +  dataservice.getNumber(), 'background: #222; color: #bada55');
+  }
 
   ngOnInit() {
   }

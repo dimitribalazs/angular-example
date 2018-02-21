@@ -5,6 +5,7 @@ import { DetailComponent } from './detail/detail.component';
 import { firstRouter } from './first.router';
 import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
+import { CurrentpageComponent } from '../shared/components/currentpage/currentpage.component';
 
 @NgModule({
   imports: [
